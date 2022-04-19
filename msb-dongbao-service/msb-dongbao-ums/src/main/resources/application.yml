@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://169.254.136.10:3306/msb-dongbao-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+mybatis-plus:
+  type-aliases-package: com.mashibing.msbdongbaoums.entity
+  mapper-locations: classpath:com/mashibing/msbdongbaoums/mapper/xml/*.xml

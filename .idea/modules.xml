@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-application/msb-dongbao-application.iml" filepath="$PROJECT_DIR$/msb-dongbao-application/msb-dongbao-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-cart/msb-dongbao-cart.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-cart/msb-dongbao-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-cart-api/msb-dongbao-cart-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-cart-api/msb-dongbao-cart-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-cms/msb-dongbao-cms.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-cms/msb-dongbao-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-cms-api/msb-dongbao-cms-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-cms-api/msb-dongbao-cms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common.iml" filepath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/msb-dongbao-common-base.iml" filepath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/msb-dongbao-common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/msb-dongbao-common-util.iml" filepath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/msb-dongbao-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-dictionary/msb-dongbao-dictionary.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-dictionary/msb-dongbao-dictionary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-dictionary-api/msb-dongbao-dictionary-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-dictionary-api/msb-dongbao-dictionary-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-generator/msb-dongbao-generator.iml" filepath="$PROJECT_DIR$/msb-dongbao-generator/msb-dongbao-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-job/msb-dongbao-job.iml" filepath="$PROJECT_DIR$/msb-dongbao-job/msb-dongbao-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-mall-parent.iml" filepath="$PROJECT_DIR$/msb-dongbao-mall-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-application/msb-dongbao-manager-web/msb-dongbao-manager-web.iml" filepath="$PROJECT_DIR$/msb-dongbao-application/msb-dongbao-manager-web/msb-dongbao-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-oms/msb-dongbao-oms.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-oms/msb-dongbao-oms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-oms-api/msb-dongbao-oms-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-oms-api/msb-dongbao-oms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-pay/msb-dongbao-pay.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-pay/msb-dongbao-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-pay-api/msb-dongbao-pay-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-pay-api/msb-dongbao-pay-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-pms/msb-dongbao-pms.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-pms/msb-dongbao-pms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-pms-api/msb-dongbao-pms-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-pms-api/msb-dongbao-pms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-application/msb-dongbao-portal-web/msb-dongbao-portal-web.iml" filepath="$PROJECT_DIR$/msb-dongbao-application/msb-dongbao-portal-web/msb-dongbao-portal-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-service.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-sms/msb-dongbao-sms.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-sms/msb-dongbao-sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-sms-api/msb-dongbao-sms-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-sms-api/msb-dongbao-sms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/msb-dongbao-ums.iml" filepath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/msb-dongbao-ums.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/msb-dongbao-ums-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/msb-dongbao-ums-api.iml" />
+    </modules>
+  </component>
+</project>
