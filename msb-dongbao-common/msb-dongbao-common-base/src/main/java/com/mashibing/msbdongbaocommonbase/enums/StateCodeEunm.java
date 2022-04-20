@@ -16,9 +16,24 @@ public enum StateCodeEunm {
      */
     FIAL(500,"请求失败"),
     /**
+     * 用户存在
+     */
+    EXISTUSER(300,"用户存在"),
+    /**
+     * 用户不存在
+     */
+    NOTEXISTUSER(300,"用户不存在"),
+    /**
+     * 密码错误
+     */
+    PASSWORDERROR(400,"密码错误"),
+    /**
      * 请求成功
      */
     SUCCESS(200,"返回成功");
+
+
+
 
     private int code;
     private String msg;

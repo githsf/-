@@ -1,6 +1,7 @@
 package com.mashibing.msbdongbaoportalweb.controller;
 
 
+import com.mashibing.msbdongbaocommonbase.annotation.TokenCheck;
 import com.mashibing.msbdongbaocommonbase.result.ResultWrapper;
 import com.mashibing.msbdongbaocommonutil.JWTUtil;
 import com.mashibing.msbdongbaoumsapi.entity.UmsMember;
@@ -29,15 +30,20 @@ public class UmsMemberControllerA {
     @PostMapping ("/in")
     public ResultWrapper inserts(@RequestBody @Valid UmsMemberREgisterParamDTO umsMemberREgisterParamDTO){
         System.out.println("11111111111111111111111:"+umsMemberREgisterParamDTO.toString());
-        int insert = umsMemberService.insert(umsMemberREgisterParamDTO);
-        return ResultWrapper.getSuccessBuilder().date(insert).build();
+        return umsMemberService.insert(umsMemberREgisterParamDTO);
     }
 
     @PostMapping("/byName")
-    public String LoginByName(@RequestBody UmsMemberLoginParamDTO umsMemberLoginParamDTO){
-        String s = umsMemberService.LoginByName(umsMemberLoginParamDTO);
-        return s;
+    public ResultWrapper LoginByName(@RequestBody UmsMemberLoginParamDTO umsMemberLoginParamDTO){
+        return umsMemberService.LoginByName(umsMemberLoginParamDTO);
     }
+
+    @PostMapping("/edit")
+    @TokenCheck
+    public ResultWrapper LoginByName(@RequestBody  UmsMember umsMember){
+       return umsMemberService.edit(umsMember);
+    }
+
     //测试token
     @GetMapping("/test-token")
     public String LoginByName(String token){

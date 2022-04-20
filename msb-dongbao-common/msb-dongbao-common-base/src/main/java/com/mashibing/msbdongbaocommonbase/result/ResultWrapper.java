@@ -29,6 +29,32 @@ public class ResultWrapper<T> implements Serializable {
     }
 
     /**
+     * 返回用户存在
+     * @return
+     */
+    public static ResultWrapper.ResultWrapperBuilder getExistUser(){
+        return ResultWrapper.builder().code(StateCodeEunm.EXISTUSER.getCode()).msg(StateCodeEunm.EXISTUSER.getMsg());
+    }
+
+
+    /**
+     * 返回用户不存在
+     * @return
+     */
+    public static ResultWrapper.ResultWrapperBuilder getNotExistUser(){
+        return ResultWrapper.builder().code(StateCodeEunm.NOTEXISTUSER.getCode()).msg(StateCodeEunm.NOTEXISTUSER.getMsg());
+    }
+
+    /**
+     * 返回密码错误
+     * @return
+     */
+    public static ResultWrapper.ResultWrapperBuilder getPassowrdError(){
+        return ResultWrapper.builder().code(StateCodeEunm.PASSWORDERROR.getCode()).msg(StateCodeEunm.PASSWORDERROR.getMsg());
+    }
+
+
+    /**
      * 返回失败的包装
      * @return
      */

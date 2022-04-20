@@ -1,6 +1,7 @@
 package com.mashibing.msbdongbaoumsapi.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.mashibing.msbdongbaocommonbase.result.ResultWrapper;
 import com.mashibing.msbdongbaoumsapi.entity.UmsMember;
 import com.mashibing.msbdongbaoumsapi.entity.dto.UmsMemberLoginParamDTO;
 import com.mashibing.msbdongbaoumsapi.entity.dto.UmsMemberREgisterParamDTO;
@@ -14,7 +15,9 @@ import com.mashibing.msbdongbaoumsapi.entity.dto.UmsMemberREgisterParamDTO;
  * @since 2022-04-15
  */
 public interface UmsMemberService extends IService<UmsMember> {
-    public int insert(UmsMemberREgisterParamDTO umsMemberREgisterParamDTO);
+    public ResultWrapper insert(UmsMemberREgisterParamDTO umsMemberREgisterParamDTO);
 
-    public String LoginByName(UmsMemberLoginParamDTO umsMemberLoginParamDTO);
+    public ResultWrapper LoginByName(UmsMemberLoginParamDTO umsMemberLoginParamDTO);
+
+    public ResultWrapper edit(UmsMember umsMember);
 }
