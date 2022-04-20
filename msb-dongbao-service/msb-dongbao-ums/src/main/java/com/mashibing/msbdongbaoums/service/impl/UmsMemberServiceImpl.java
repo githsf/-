@@ -1,6 +1,7 @@
 package com.mashibing.msbdongbaoums.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.mashibing.msbdongbaocommonutil.JWTUtil;
 import com.mashibing.msbdongbaoums.mapper.UmsMemberMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mashibing.msbdongbaoumsapi.entity.UmsMember;
@@ -65,7 +66,9 @@ public class UmsMemberServiceImpl extends ServiceImpl<UmsMemberMapper, UmsMember
         }else {
             return "用户不存在";
         }
-        return "登陆成功";
+        //当客户登录成功后返回一个token
+        String token = JWTUtil.creatToken(umsMember.getUsername());
+        return token;
     }
 
 

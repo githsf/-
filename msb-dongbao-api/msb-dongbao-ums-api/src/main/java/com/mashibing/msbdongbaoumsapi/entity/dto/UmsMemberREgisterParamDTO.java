@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.ToString;
 
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
@@ -19,6 +20,7 @@ public class UmsMemberREgisterParamDTO implements Serializable {
     private String username;
     private String password;
     private String icon;
+    @Email
     private String email;
     private String nickName;
 }

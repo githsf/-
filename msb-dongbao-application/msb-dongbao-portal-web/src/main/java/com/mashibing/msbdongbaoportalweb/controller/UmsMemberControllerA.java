@@ -2,6 +2,7 @@ package com.mashibing.msbdongbaoportalweb.controller;
 
 
 import com.mashibing.msbdongbaocommonbase.result.ResultWrapper;
+import com.mashibing.msbdongbaocommonutil.JWTUtil;
 import com.mashibing.msbdongbaoumsapi.entity.UmsMember;
 import com.mashibing.msbdongbaoumsapi.entity.dto.UmsMemberLoginParamDTO;
 import com.mashibing.msbdongbaoumsapi.entity.dto.UmsMemberREgisterParamDTO;
@@ -36,6 +37,12 @@ public class UmsMemberControllerA {
     public String LoginByName(@RequestBody UmsMemberLoginParamDTO umsMemberLoginParamDTO){
         String s = umsMemberService.LoginByName(umsMemberLoginParamDTO);
         return s;
+    }
+    //测试token
+    @GetMapping("/test-token")
+    public String LoginByName(String token){
+        String token1 = JWTUtil.parseToken(token);
+        return token1;
     }
 }
 
