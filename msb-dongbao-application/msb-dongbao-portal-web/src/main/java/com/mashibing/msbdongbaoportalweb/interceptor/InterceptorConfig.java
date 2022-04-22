@@ -24,6 +24,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
             registry.addInterceptor(authInterceptor())
                     .addPathPatterns("/**")//拦截哪些
                     .excludePathPatterns("/ums-member/in")
-            .excludePathPatterns("/ums-member/byName");//哪些不拦截
+            .excludePathPatterns("/ums-member/byName")
+            .excludePathPatterns("/code/**");//哪些不拦截
     }
 }
