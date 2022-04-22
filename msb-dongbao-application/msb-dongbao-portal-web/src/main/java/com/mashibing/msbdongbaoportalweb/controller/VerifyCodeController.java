@@ -10,7 +10,9 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.Base64;
 
 /**
  * @Auther: 何水锋
@@ -50,6 +52,35 @@ public class VerifyCodeController {
         }
 
     }
+
+    //将图片转成base64
+    @GetMapping("/generator-byse64")
+    @TokenCheck(required = false)//在拦截器里直接放行
+    public String generatorCodeByse64(HttpServletRequest request,HttpServletResponse response) throws NoSuchFieldException {
+        try {
+            ImageCode imageCode = ImageCode.getInstance();
+            //验证码的值
+            String code = imageCode.getCode();
+            request.getSession().setAttribute(attrName,code);
+            //验证码图片
+            ByteArrayInputStream image = imageCode.getImage();
+            ByteArrayOutputStream swapStream = new ByteArrayOutputStream();
+            byte[] buff = new byte[1024];
+            int r = 0;
+            //读取图片的长度，如果大于0就进行读取图片
+            while ((r=image.read(buff,0,1024))>0){
+                swapStream.write(buff,0,r);
+            }
+            byte[] bytes = swapStream.toByteArray();
+
+            return Base64.getEncoder().encodeToString(bytes);
+
+        }catch (Exception e){
+            System.out.println("异常");
+            return "";
+        }
+    }
+
 
     /**
      * 校验验证码
