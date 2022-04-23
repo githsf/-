@@ -25,6 +25,6 @@ public class InterceptorConfig implements WebMvcConfigurer {
                     .addPathPatterns("/**")//拦截哪些
                     .excludePathPatterns("/ums-member/in")
             .excludePathPatterns("/ums-member/byName")
-            .excludePathPatterns("/code/**");//哪些不拦截
+            .excludePathPatterns("/**");//哪些不拦截
     }
 }
