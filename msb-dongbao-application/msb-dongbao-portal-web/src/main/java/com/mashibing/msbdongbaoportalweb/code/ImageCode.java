@@ -46,15 +46,35 @@ public class ImageCode {
         graphics.setFont(new Font("宋体",Font.PLAIN,30));
         Random random = new Random();
         this.code = "";
-        for (int i = 0; i <6; i++) {
-            String s = String.valueOf(random.nextInt(10));
-            this.code += s;
-            //设置字体颜色
-            graphics.setColor(new Color(0,0,0));
-            //设置字体间隔
-            graphics.drawString(s,(weight/6)*i,40);
-        }
-        //划线
+        //画线，生成6位数字的
+//        for (int i = 0; i <6; i++) {
+//            String s = String.valueOf(random.nextInt(10));
+//            this.code += s;
+//            //设置字体颜色
+//            graphics.setColor(new Color(0,0,0));
+//            //设置字体间隔
+//            graphics.drawString(s,(weight/6)*i,40);
+//        }
+            /**
+             * 设置数字相加
+             */
+            //设置两个随机数
+          int num1 = random.nextInt(20);
+          int num2 = random.nextInt(20);
+          //提供画板
+        graphics.setColor(new Color(0,0,100));
+        //设置数字的存储位置
+        graphics.drawString(num1+"",(weight/6)*0+20,60);
+        graphics.drawString("+",(weight/6)*1+20,60);
+        graphics.drawString(num2+"",(weight/6)*3+20,60);
+        graphics.drawString("=",(weight/6)*4+20,60);
+        graphics.drawString("?",(weight/6)*5+20,60);
+        //将结果传给code
+        int result = num1+num2;
+        this.code = result+"";
+
+
+        //干扰线条
         graphics.setColor(new Color(100,100,100));
         for (int i = 0; i < 100; i++) {
             int x = random.nextInt(weight);
