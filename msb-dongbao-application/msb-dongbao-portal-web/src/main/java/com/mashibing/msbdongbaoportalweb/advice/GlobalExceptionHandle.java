@@ -1,9 +1,11 @@
 package com.mashibing.msbdongbaoportalweb.advice;
 
-import com.baomidou.mybatisplus.extension.api.R;
+import com.baomidou.kaptcha.exception.KaptchaException;
+import com.baomidou.kaptcha.exception.KaptchaIncorrectException;
+import com.baomidou.kaptcha.exception.KaptchaNotFoundException;
+import com.baomidou.kaptcha.exception.KaptchaTimeoutException;
 import com.mashibing.msbdongbaocommonbase.TokenException;
 import com.mashibing.msbdongbaocommonbase.result.ResultWrapper;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -29,5 +31,17 @@ public class GlobalExceptionHandle {
     @ExceptionHandler(TokenException.class)
     public ResultWrapper loginTokenException(Exception e){
         return ResultWrapper.getFialBuilder().msg(e.getMessage()).build();
+    }
+    @ExceptionHandler(KaptchaException.class)
+    public String kcaptchaException(KaptchaException e){
+        if (e instanceof KaptchaTimeoutException){
+            return "超时";
+        }else if (e instanceof KaptchaIncorrectException){
+            return "不正确";
+        }else if (e instanceof KaptchaNotFoundException){
+            return "没找到";
+        }else {
+            return "反正错了";
+        }
     }
 }
